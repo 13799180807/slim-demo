@@ -24,9 +24,9 @@ $app->get('/2', function (Request $request, Response $response, $args) {
 
 
 
-     include "1.php";
+    // include "1.php";
     //$response->getBody()->write("我是新建的的2!");
-     return $response;
+     return header("Location:1.php");
 });
 
 $app->get('', function (Request $request, Response $response, $args) {
